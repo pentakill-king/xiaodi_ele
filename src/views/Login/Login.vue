@@ -35,6 +35,7 @@ export default {
           this.$store.commit('addMenu', this.$router)
           this.$router.push({ name: 'home' })
         } else {
+          
           this.$message.warning(res.data.message)
         }
       })
